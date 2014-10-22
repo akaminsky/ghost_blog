@@ -4,5 +4,4 @@
 *.DS_Store
 *.swp
 *.out
-*.githubsettings
 collections/.cache
