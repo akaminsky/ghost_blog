@@ -910,7 +910,7 @@ body:not(.post-template) .post-title {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 0 0;
+    margin: 5rem 0;
     padding: 2rem 0 0 0;
     border-top: #E6E6E6 1px solid;
 }
