@@ -715,6 +715,9 @@ margin on the iframe, cause it breaks stuff. */
     animation: fade-in-down 0.6s;
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 .home-template .page-description, 
 .post-template .post-date {
@@ -722,6 +725,9 @@ margin on the iframe, cause it breaks stuff. */
     animation: fade-in-down 0.9s;
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -1726,9 +1732,9 @@ body:not(.post-template) .post-title {
         transform: translateY(-10px);
     }
     100% {
-        opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
+        opacity: 1;
     }
 }
 @keyframes fade-in-down {
