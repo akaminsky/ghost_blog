@@ -775,6 +775,13 @@ body:not(.post-template) .post-title {
     border-bottom: 0;
 }
 
+.post-img {
+    width: 100%;
+}
+.post-img img {
+    width: 100%;
+}
+
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
