@@ -4,11 +4,7 @@
 </div>
 
 {{! This is the post loop - each post will be output using this markup }}
-
-
 {{#foreach posts}}
-{{! If it is a featured post, show the posts main image for the post }}
-{{#if featured}}
 <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
@@ -25,32 +21,7 @@
         
     </footer>
 </article>
-{{/if}}
 {{/foreach}}
-
-{{#foreach posts}}
-{{! If it isnt a featured post, dont show the main image for the post }}
-{{#unless featured}}
-<article class="{{post_class}}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </header>  
-    <section class="post-excerpt">
-        <p>{{excerpt words="50"}}...<a class="read-more" href="{{url}}">read more</a></p>
-    </section>
-    <footer class="post-meta">
-        {{tags prefix=" on "}}
-        
-    </footer>
-</article>
-{{/unless}}
-{{/foreach}}
-
-
-
-
-
 
 {{! Previous/next page links - displayed on every page }}
 {{pagination}}
