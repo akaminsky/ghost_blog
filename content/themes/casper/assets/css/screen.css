@@ -778,6 +778,9 @@ body:not(.post-template) .post-title {
 .post-img {
     width: 100%;
 }
+.post-img a {
+    border-bottom: 0;
+}
 .post-img img {
     width: 100%;
 }
