@@ -1073,7 +1073,7 @@ body:not(.post-template) .post-title {
     height: 75%;
     min-height: 180px;
     background-attachment: fixed;
-    background-position:bottom;
+    background-position:center;
 }
 
 .no-cover.post-head.main-header {
