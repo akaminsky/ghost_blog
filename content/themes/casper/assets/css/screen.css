@@ -983,9 +983,10 @@ body:not(.post-template) .post-title {
 
 .author-meta a {
     color: #9EABB3;
+    border-bottom: 0;
 }
 .author-meta a:hover {
-    color: #111;
+    color: #2CA7B8;
 }
 
 /* The subscribe icon on the footer */
